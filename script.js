@@ -24,7 +24,7 @@ class Student {
 
     set fullName(fN){
         if(/[A-Za-z]\s[a-Za-z]/.test(fN)){
-            [this.firstName, thi.lastName] = fN.split(' ');
+            [this.firstName, this.lastName] = fN.split(' ');
         }
     }
 
@@ -53,11 +53,11 @@ class Student {
           }
         }
     
-        this.songs = songsArray;
+        this.hobbies = songsArray;
       }
 
     studentInfo(){
-        return `Hi, I am ${this.fullName}. I am a ${this.gender}. I was borned on ${this.dateOfBirth}. My student ID is ${this.studentID}. My hobbies are ${this.hobbies}.`
+        return `Hi, I am ${this.fullName}. I am ${this.gender}. I was borned on ${this.dateOfBirth}. My student ID is ${this.studentID}. My hobbies are ${this.hobbies}.`
     }
 }
 
